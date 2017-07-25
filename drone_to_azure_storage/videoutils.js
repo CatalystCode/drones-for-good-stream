@@ -6,7 +6,7 @@ processFile = (videoName, accountName, accountKey) => {
   var process = new ffmpeg(videoName);
   process.then(function (video) {
     // Callback mode
-    video.fnExtractFrameToJPG('/home/eladiw/util/frames/', {
+    video.fnExtractFrameToJPG('/home/utils/frames/', {
       start_time: `0:00:01`,
       frame_rate : 1, // a frame per second
       file_name : `frm_%t_%s`
